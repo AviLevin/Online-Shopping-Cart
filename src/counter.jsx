@@ -16,25 +16,25 @@ class Counter extends Component {
         return (
 
 
-            
-
-                    <div className="card new1" style={{ width: '18rem' }}>
-                        <img className="card-img-top mp1" src={this.props.counter.imgUrl} alt="Card image cap" />
-                        <div className="card-body">
 
 
-                            <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-                            <button
-                                onClick={() => this.props.onIncrement(this.props.counter)}
-                                className="btn btn-secondary btn-sm" > Increment me</button>
+            <div className="card new1" style={{ width: '18rem' }}>
+                <img className="card-img-top mp1" src={this.props.counter.imgUrl} alt="Card image cap" />
+                <div className="card-body">
 
-                            <button
-                                onClick={() => this.props.onDelete(this.props.counter.id)}
-                                type="button" className="btn btn-danger btn-sm m-2">delete</button>
-                        </div>
-                    </div>
 
-           
+                    <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                    <button
+                        onClick={() => this.props.onIncrement(this.props.counter)}
+                        className="btn btn-secondary btn-sm" > Add to cart</button>
+
+                    <button
+                        onClick={() => this.props.onDelete(this.props.counter.id)}
+                        type="button" className="btn btn-danger btn-sm m-2">delete</button>
+                </div>
+            </div>
+
+
 
 
 
